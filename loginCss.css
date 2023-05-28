@@ -1,0 +1,177 @@
+
+@font-face {
+  font-family: 'League';
+  src: url('LeagueRegular.woff2') format('woff2'),
+      url('LeagueRegular.woff') format('woff');
+  font-weight: normal;
+  font-style:normal;
+  font-display: swap;
+}
+
+
+
+#errore h1{
+  color:#ff0029;
+  
+}
+
+
+body {
+font-family:  "League",sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image:url(immagini/ashe_background.jpg);
+  background-repeat:no-repeat ;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  margin:0px;
+  cursor: url(immagini/cursor.png),auto;
+   
+}
+
+
+section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0,0,0,0.4);
+  padding: 20px;
+  font-size: 22px;
+  border-radius: 60px;
+  border: 2px solid rgba(255,255,255,.5);
+  
+ 
+}
+
+section a,section h1{
+  color:  #C4A15B;
+  margin-top: 0px;
+  text-shadow: 2px 2px 4px black;
+  text-align: center;
+  cursor: url(immagini/cursor-pointer.png),auto;
+}
+
+label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0 5px 0;
+  margin-top: 10px;
+  cursor: url(immagini/cursor.png),auto;
+
+}
+
+#ricerca{
+  align-items: center;
+  justify-content: center;
+}
+
+#submit{
+  width:100%;
+  height: 50px;
+  border: 1px solid black;
+  font-size: 18px;
+  font-weight: 700; 
+  cursor: url(immagini/cursor-pointer.png),auto;
+  outline: none;
+  border-radius: 25px;
+  margin:10px;
+  padding:12px;
+  background-color:#0397AB;
+  color: #010A13;
+  
+}
+
+#submit:hover{
+  border-color:#0397AB;
+  color:#CDFAFA;
+  transition: .5s;
+}
+a:hover{
+  color: #CDFAFA;
+  
+  transition: .3s;
+}
+
+#spanUserID{
+  display:none;
+}
+
+.erroreInput{
+  border: 2px solid red;
+}
+
+.errore{
+  color:red;
+  text-align: center;
+}
+
+input {
+  margin-left: 0.5em;
+  font-size: 0.8em;
+  padding: 6px;
+  background-color: #CDFAFA;
+  border-radius: 7px;
+  font-family: 'League',sans-serif;
+  padding: 10px 20px;
+}
+
+#form{
+  margin:0px;
+}
+
+label{
+  color: #0AC8B9;
+}
+
+
+@media(max-width:768px){
+
+.errore{
+  font-size: 20px;
+}
+
+section{
+  padding:30px;
+  border-radius: 40px;
+  font-size: 1em;
+}
+
+label{
+  flex-direction: column;
+}
+body{
+  background-image: url(immagini/ashe_media.jpg);
+ 
+}
+
+}
+
+
+
+@media(min-width: 768px) and (max-width: 1024px){
+  
+  section{
+    padding:30px;
+    border-radius: 40px;
+    font-size: 2.5em;
+  }
+
+body{
+  background-image: url(immagini/ashe_media.jpg);
+  
+}
+
+
+
+
+
+
+}
+
+

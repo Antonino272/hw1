@@ -1,0 +1,577 @@
+@font-face {
+    font-family: 'Grassetto' ;
+    src: url(immagini/BeaufortForLoL-OTF/BeaufortforLOL-HeavyItalic.otf);
+    font-weight: normal;
+  font-style:normal;
+  font-display: swap;
+}
+@font-face {
+    font-family: 'Medio';
+    src: url(immagini/Spiegel-OTF/Spiegel-RegularItalic.otf);
+}
+
+header{
+    background-color: #0A1428;
+    height: 180px;
+    font-size: 15px;
+    line-height: normal;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 2em;
+    margin:20px;
+    color:#C8AA6E;
+    line-height: 3em;
+    cursor: url(immagini/cursor-pointer.png),auto; 
+    font-family: 'Grassetto';
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+#logo{
+    width:10%;
+    position: absolute;
+    
+}
+
+#intestazione{
+
+    display:flex;
+    justify-content: space-between;
+    
+}
+#intestazione h1{
+    font-family: 'League', sans-serif;
+    color: #C8AA6E;
+    font-size: 4em;
+    position: relative;    
+    
+}
+#titolo{ margin-left: 135px;
+
+}
+#spotify:hover{
+color: #1DB954;
+transition: 0.3s;
+}
+#preferiti:hover{
+    color: #5B5A56;
+    transition: 0.3s;
+}
+
+#ricercaChamp:hover{
+    color:#0397AB;
+    transition: 0.3s;
+}
+#logout:hover{
+    color: red;
+    transition: 0.3s;
+}
+#home:hover{
+    color: #F0E6D2;;
+    transition:0.3s ;
+}
+
+body{
+    background-color:#0b172e;
+    cursor: url(immagini/cursor.png),auto;
+}
+
+
+.search{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    cursor: url(immagini/cursor.png),auto;
+    height: 100%;
+   
+    }
+    
+    .search label{
+    margin-right: 10px;
+    font-size: 50px;
+    font-family: 'Grassetto', sans-serif;
+    color: #F0E6D2;
+    
+    }
+    #testo{
+        font-family: 'Medio',sans-serif;
+        font-size: 30px;
+        
+    }
+    #titolo1 h1 {
+        font-size: 1.5em;
+    }
+  
+    .search input:focus{
+      outline: none;
+    }
+    
+    .searchBar{
+    width: 50%;
+    height: 27px;
+    padding: 16px 14px 18px;
+    font-family: 'League',sans-serif;
+    border-radius: 20px;
+    margin-top: 5px;
+    font-size: 18px;
+    margin-bottom: 8px;
+    background-color: #CDFAFA;
+    color: #3C3C41;
+    }
+    
+    .search input[type="submit"]{
+
+        background-color:#C8AA6E;
+        color: #463714;
+        font-size: 20px;
+        border-radius: 5px;
+        font-family: 'League',sans-serif;
+        padding: 10px 20px;
+        cursor: url(immagini/cursor-pointer.png),auto;
+        
+        
+    }
+
+    .search input[type="submit"]:hover{
+        transition: 0.3s;
+      border-color:#C8AA6E;
+      border-width: 10px;
+      
+    }
+
+
+
+
+    footer{
+        background-color: #0A1428;
+        color:#C8AA6E;
+        font-family: 'Grassetto',sans-serif;
+        font-size: 2em;
+        height: 120px;
+        padding: 50px;
+        text-align: center;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        line-height: normal;
+
+
+    }
+
+
+    #elenco_champ div,#mostra_champ div,#champ_preferiti div ,#results div{
+        width: 25%;
+        background-color:#0e1f3e;
+        align-items: center;
+        display:flex;
+        flex-direction: column;
+        margin:15px;
+        
+    }
+    
+    
+    #elenco_champ,#mostra_champ,#champ_preferiti,#results{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+       
+    }
+    
+    #elenco_champ div img,#mostra_champ div img,#champ_preferiti div img,#results div img{
+        height: 100% ;
+        width:100%;
+    }
+    
+    
+    #elenco_champ h1,#mostra_champ h1,#champ_preferiti h1, #results h1{
+        font-size: 2em;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'Grassetto',sans-serif;
+        color: #C8AA6E;
+    }
+    
+    
+    
+    
+    #elenco_champ div div,#mostra_champ div div,#results div div{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    }
+    
+    #mostra_champ div p,#elenco_champ div p,#results div p{
+    font-size: 1.4em;
+    text-align: center;
+    font-family: 'Medio',sans-serif;
+    color: #CDFAFA;
+    }
+    
+  
+    #titolo1, #titoloPreferiti{
+        color:#C8AA6E;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        padding:10px;
+        font-family: 'League',sans-serif;
+        text-align: center;
+    }
+   
+    #mostra_champ div:hover {
+    transform: scale(1.05);
+    cursor: url(immagini/cursor.png), auto;
+    transition: transform 0.3s ease-in-out, cursor 0.3s;
+}
+#champ_preferiti div:hover{
+    transform: scale(1.05);
+    cursor: url(immagini/cursor.png), auto;
+    transition: transform 0.3s ease-in-out, cursor 0.3s;
+
+}
+
+#no-results-message{
+    color:red;
+    text-align: center;
+    font-family: 'League',sans-serif;
+    font-size: 2em;
+}
+    
+    
+      
+
+    
+
+.preferiti{
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color:#C8AA6E;
+        color: #463714;
+        font-size: 20px;
+        font-family: 'League',sans-serif;
+        padding: 15px;
+        cursor: url(immagini/cursor-pointer.png),auto;
+        width: 220px;
+        height: 60px;
+        border: none;
+        outline: none;
+}
+
+
+
+.preferiti:hover{
+    transition: 0.3s;
+      border-color:#C8AA6E;
+      opacity: 0.65;
+      
+
+      
+}
+
+
+    
+
+
+
+
+/*CSS SEZIONE MUSICA*/
+
+
+#playlist div img{
+    width:30%;
+    margin:10px;
+    border-radius: 20px ;
+    border:3px solid white;
+
+}
+
+
+
+#playlist div{
+    display:flex;
+    align-items: center;
+    background-color: #C8AA6E;
+    margin:3px;
+    border-radius:20px;
+    
+    
+}
+
+#playlist a:visited{
+    color:#0A323C
+}
+#playlist a:link{
+    color:black;
+    cursor: url(immagini/cursor-pointer.png),auto;
+}
+
+
+#playlist{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    width: 700px;
+}
+
+
+#ricerca_playlist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#ricerca_playlist button,#playlist button{
+    font-size: 1.5em;
+    margin:20px;
+    border-radius: 10px;
+    cursor: url(immagini/cursor-pointer.png),auto;
+
+
+}
+#ricerca_playlist h1{
+
+    font-size: 50px;
+    font-family: 'Grassetto', sans-serif;
+    color: #F0E6D2;
+    text-align: center;
+}
+
+#playlist div a{
+    margin:30px;
+    font-size: 20px;
+    font-family: 'League',sans-serif;
+    text-decoration: none;
+}
+#ricerca_playlist button,#playlist button{
+
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color:#C8AA6E;
+        color: #463714;
+        font-size: 20px;
+        font-family: 'League',sans-serif;
+        padding: 15px;
+        cursor: url(immagini/cursor-pointer.png),auto;
+        width: 220px;
+        height: 60px;
+        border: none;
+        outline: none;
+        
+}
+
+
+
+
+
+
+/* Media query per telefoni con larghezza <= 768px (modalità barra degli strumenti di Chrome) */
+@media(max-width: 768px) {
+   
+    
+    #menu a {
+       display: flex;
+       margin:20px;
+       font-size: 13px;
+       justify-content: space-around;
+       align-items: center;
+       
+    }
+    nav{
+        padding: 0px;
+        
+    }
+   
+     nav #menu{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        margin-top: 40px;
+
+    
+        
+    }
+    
+
+  header {
+    height: 110px;
+    
+}
+#titolo{
+position: relative;
+margin-top: 13px;
+margin-left: 50px
+
+}
+    #logo {
+      width: 15%;
+      position: absolute;
+      margin-left: -180px;
+    }
+
+    #intestazione{
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        align-items: center;
+        
+    }
+    #intestazione h1 {
+      font-size: 3em;
+    }
+ 
+  
+    .search {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+  
+    .search label {
+      font-size: 30px;
+    }
+  
+    #testo {
+      font-size: 20px;
+    }
+    #titolo1 h1 {
+        font-size: 0.7em;
+    }
+  
+    .searchBar {
+      width: 80%;
+      font-size: 16px;
+    }
+  
+    .search input[type="submit"] {
+      font-size: 18px;
+    }
+  
+    footer {
+      height: 90px;
+      padding: 30px;
+      font-size: 1.5em;
+    }
+  
+    #elenco_champ div,
+    #mostra_champ div,
+    #champ_preferiti div,
+    #results div {
+      width: 45%;
+      margin: 10px;
+    }
+  
+    #elenco_champ h1,
+    #mostra_champ h1,
+    #champ_preferiti h1,
+    #results h1 {
+      font-size: 1.5em;
+    }
+  
+    #elenco_champ div p,
+    #mostra_champ div p,
+    #results div p {
+      font-size: 1em;
+    }
+  
+    .preferiti {
+      font-size: 0.9em;
+      width: 150px;
+      height: 40px;
+      padding: 10px;
+    }
+    #ricerca_playlist h1{
+        font-size: 2em;
+    }
+
+   #playlist{
+    width: 300px;
+   }
+   #playlist div a{
+    font-size: 13px;
+    margin-left:10px ;
+   }
+   #playlist div img{
+    width: 35%;
+   }
+}
+
+/*media query per Ipad e tablet*/
+@media(min-width: 768px) and (max-width: 1024px){
+    #menu a {
+        display: flex;
+        margin:20px;
+        font-size: 2em;
+        justify-content: space-around;
+        align-items: center;
+        
+     }
+     nav{
+         padding: 0px;
+        justify-content: center;
+         
+     }
+    
+      nav #menu{
+         display: flex;
+         flex-direction: row;
+         position: absolute;
+         margin-top: 100px;
+ 
+     
+         
+     }
+     
+  
+   header {
+     height: 200px;
+    
+ }
+ #titolo{
+ position: relative;
+ margin-top: 13px;
+ margin-left: 50px;
+
+ 
+ }
+     #logo {
+       width: 12%;
+       position: absolute;
+       margin-left: -370px;
+     }
+ 
+     #intestazione{
+         flex-direction: column;
+         justify-content: space-between;
+         position: relative;
+         align-items: center;
+         
+     }
+     #intestazione h1 {
+       font-size: 5.5em;
+     }
+.preferiti{
+    width: 180px;
+}
+
+}
